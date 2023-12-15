@@ -1,6 +1,2 @@
 #!/bin/bash
-<<<<<<< HEAD
 gcc -S -masm=intel $CFILE -o ${CFILE//.c/.s}
-=======
-gcc -S -masm=intel $CFILE -o ${CFILE//'.c'/'.s'}
->>>>>>> refs/remotes/origin/master

@@ -1,9 +1,4 @@
-
- #include "stdio.h"
-=======
 #include "stdio.h"
->>>>>>> refs/remotes/origin/master
-
 /**
  * main - Entry point
  *

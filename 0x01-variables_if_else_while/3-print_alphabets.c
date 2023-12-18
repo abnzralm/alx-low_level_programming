@@ -1,52 +1,21 @@
 #include <stdio.h>
+
 /**
-<<<<<<< HEAD
- * main - Entry point
+ * main - Prints the alphabet in lowercase, and then in uppercase.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-int k;
+	char letter;
 
-for (k = 97; k <= 122; k++)
-{
-putchar(k);
-}
-if (k > 57)
-{
-for (k = 65; k <= 90; k++)
-{
-putchar(k);
-}
-}
-putchar('\n');
-return (0);
-=======
- * main - main block
- * Description:  prints the alphabet in lowercase,
- * and then in uppercase, followed by a new line.
- * Return: 0
- */
-int main(void)
-{
-	char c = 97;
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
 
-	while (c <= 122)
-	{
-		putchar(c);
-		c++;
-	}
-
-	c = 65;
-
-	while (c <= 90)
-	{
-		putchar(c);
-		c++;
-	}
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		putchar(letter);
 
 	putchar('\n');
+
 	return (0);
->>>>>>> refs/remotes/origin/master
 }

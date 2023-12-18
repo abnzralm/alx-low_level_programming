@@ -1,50 +1,22 @@
 #include <stdio.h>
-<<<<<<< HEAD
+
 /**
- * main - Entry point
+ * main - Prints all the numbers of base 16 in lowercase.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-int k;
+	int num;
+	char letter;
 
-for (k = 48; k <= 57; k++)
-{
-putchar(k);
-}
-if (k > 57)
-{
-for (k = 97; k <= 102; k++)
-{
-putchar(k);
-}
-}
-putchar('\n');
-return (0);
-=======
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
 
-/**
-* main - prints all the numbers of base 16 in lowercase
-*
-* Description: The numbers are all single digits
-* Return: Always(0) Success
-*/
+	for (letter = 'a'; letter <= 'f'; letter++)
+		putchar(letter);
 
-int main(void)
-{
-	int i;
-
-	for (i = 48; i < 58; i++)
-	{
-		putchar(i);
-	}
-	for (i = 'a'; i <= 'f'; i++)
-	{
-		putchar(i);
-	}
 	putchar('\n');
 
 	return (0);
->>>>>>> refs/remotes/origin/master
 }
